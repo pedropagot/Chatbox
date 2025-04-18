@@ -8,6 +8,11 @@ import re
 
 app = Flask(__name__)
 
+# ROTA PADRÃO DE TESTE
+@app.route("/")
+def home():
+    return "Chatbot SEFAZ-MA está ativo!"
+
 # Armazenamento temporário de sessões
 sessions = {}
 
